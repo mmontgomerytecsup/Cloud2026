@@ -159,7 +159,7 @@ public class UGSInitializer : MonoBehaviour
         {
             Debug.Log("Signing out player...");
             
-            await AuthenticationService.Instance.SignOutAsync();
+            AuthenticationService.Instance.SignOut();
             
             IsAuthenticated = false;
             PlayerId = null;
