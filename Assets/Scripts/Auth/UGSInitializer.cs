@@ -243,7 +243,7 @@ public class UGSInitializer : MonoBehaviour
 
         try
         {
-            await AuthenticationService.Instance.RefreshSessionAsync();
+            AuthenticationService.Instance.RefreshSession();
             UpdatePlayerInfo();
             Debug.Log("Access token refreshed successfully");
             return true;
